@@ -1,0 +1,26 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "twxs.cmake"
+      ]
+    }
+  },
+  "forwardPorts": [
+    6080,
+    5901
+  ],
+  "features": {
+    "ghcr.io/romi2002/features/desktop-lite:latest": {
+      "password": "vscode",
+      "webPort": "6080",
+      "vncPort": "5901"
+    }
+    // "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+  }
+}
